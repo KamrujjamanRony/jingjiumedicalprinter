@@ -1,0 +1,65 @@
+<div class="bg-gray-100 relative max-w-7xl mx-auto rounded-sm overflow-hidden my-4">
+  <div class="grid md:grid-cols-2 items-center max-md:gap-10 py-10 border-y-8 border-orange-400">
+    <div class="text-center px-6">
+      <h2 class="font-extrabold text-2xl text-slate-900 my-2 leading-tight">Welcome to</h2>
+      <h2 class="font-extrabold text-5xl text-orange-500 leading-tight">{{ companyName }}</h2>
+      <p class="text-slate-900 text-base leading-relaxed mt-4">
+        Discover amazing discounts and deals. Don't miss out on our exclusive offers for a limited
+        time.
+      </p>
+
+      <button
+        routerLink="/about"
+        type="button"
+        class="bg-linear-to-r hover:bg-linear-to-l from-orange-400 to-orange-600 hover:bg-orange-500 text-white tracking-wide font-medium text-[15px] py-3 px-6 rounded-lg w-max cursor-pointer mt-12"
+      >
+        About Us
+      </button>
+    </div>
+
+    <div
+      class="bg-linear-to-tr from-orange-400 to-orange-600 rounded-tl-full rounded-bl-full w-full h-max"
+    >
+      <div class="p-2">
+        <img
+          src="images/banner.webp"
+          class="h-64 w-64 rounded-full object-cover border-4 border-white"
+          alt="img"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="relative before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-5"
+>
+  <img
+    src="https://readymadeui.com/cardImg.webp"
+    alt="Banner Image"
+    class="absolute inset-0 w-full h-full object-cover bg-linear-to-r from-indigo-900 to-purple-900"
+  />
+
+  <div
+    class="min-h-87.5 relative z-10 h-full max-w-4xl mx-auto flex flex-col justify-center items-center text-center text-white p-6"
+  >
+    <h2 class="md:text-6xl text-3xl font-semibold mb-6">
+      Explore the
+      <span class="text-transparent bg-clip-text bg-linear-to-r to-emerald-600 from-sky-400">{{
+        companyName
+      }}</span>
+    </h2>
+    <p class="md:text-xl text-base text-center text-gray-200 max-w-2xl">
+      All kinds of medical equipments (new & used) sales & service provider. Book your require
+      equipment today!
+    </p>
+
+    <button
+      routerLink="/products"
+      type="button"
+      class="mt-12 bg-transparent text-white text-base font-medium py-3 px-6 border border-white rounded-lg hover:bg-white hover:text-black cursor-pointer transition duration-300"
+    >
+      Our Products
+    </button>
+  </div>
+</div>
