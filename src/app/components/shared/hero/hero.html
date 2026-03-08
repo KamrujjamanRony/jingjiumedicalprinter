@@ -4,8 +4,10 @@
       <h2 class="font-extrabold text-2xl text-slate-900 my-2 leading-tight">Welcome to</h2>
       <h2 class="font-extrabold text-5xl text-orange-500 leading-tight">{{ companyName }}</h2>
       <p class="text-slate-900 text-base leading-relaxed mt-4">
-        Discover amazing discounts and deals. Don't miss out on our exclusive offers for a limited
-        time.
+        {{
+          about().description ||
+            'Discover amazing discounts and deals. Do not miss out on our exclusive offers for a limited time.'
+        }}
       </p>
 
       <button

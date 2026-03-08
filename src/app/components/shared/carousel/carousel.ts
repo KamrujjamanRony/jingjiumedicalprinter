@@ -22,7 +22,9 @@ import { CarouselM } from '../../../utils/models';
         const baseUrl = environment.ImageApi.endsWith('/') 
                       ? environment.ImageApi 
                       : `${environment.ImageApi}/`;
-      return `${baseUrl}${config.src}?w=${config.width}`;
+        const srcPath = config.src.startsWith('/') ? config.src.substring(1) : config.src;
+        const imgWithEmptySrc = srcPath || '89198931-0317-449f-8829-c420e529ce2c.jpg';
+      return `${baseUrl}${imgWithEmptySrc}?w=${config.width}`;
       },
     },
   ],
